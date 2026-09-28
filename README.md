@@ -53,6 +53,48 @@ cd java-roadmap-lab\courses\02-java-basic
 run.bat
 ```
 
+## 학습자는 어디에서 작업하나요?
+
+학습자마다 원본 저장소 안에 별도의 사용자 디렉터리를 만들지 않습니다. 각 학습자는 이 저장소를 자신의 GitHub 계정으로 Fork하고, 자신의 Fork에서 과제를 구현합니다.
+
+```text
+eselabkr/java-roadmap-lab        공개 과제 원본
+          ↓ Fork
+사용자계정/java-roadmap-lab      사용자의 학습 저장소
+```
+
+Java 기본편의 실제 작업 위치는 다음과 같습니다.
+
+```text
+courses/02-java-basic/
+├── ASSIGNMENT.md                 읽기 전용 과제 요구사항
+├── LEARNING_LOG.md               자신의 학습 기록 작성
+└── src/main/java/
+    ├── lab/Main.java             프로그램 시작 지점
+    └── ...                       자신이 설계한 패키지와 클래스
+```
+
+학습자는 `courses/02-java-basic`과 같은 새 과정 디렉터리를 다시 만들 필요가 없습니다. 기존 `src/main/java` 아래에 자신이 설계한 패키지와 클래스를 추가하고, `lab.Main`에서 프로그램을 실행할 수 있게 연결합니다.
+
+권장 작업 흐름:
+
+```bash
+git clone https://github.com/사용자계정/java-roadmap-lab.git
+cd java-roadmap-lab
+git switch -c solve/java-basic
+
+cd courses/02-java-basic
+./run.sh
+```
+
+과제를 완료하면 자신의 Fork에 브랜치를 Push합니다.
+
+```bash
+git push -u origin solve/java-basic
+```
+
+개인 풀이를 원본 저장소의 `main` 브랜치에 합치지는 않습니다. 여러 사람이 함께 학습하더라도 각자 자신의 Fork 또는 브랜치에서 독립적으로 구현합니다.
+
 ## 과정 디렉터리 규칙
 
 각 과정은 다음 형태를 따릅니다.
@@ -111,4 +153,3 @@ AI 사용을 금지하지 않습니다. 다만 구현하기 전에 최소한 다
 ## 라이선스
 
 저장소의 독자적인 문서와 시작 코드는 [MIT License](LICENSE)로 배포합니다. 강의 콘텐츠에 대한 권리는 각 권리자에게 있습니다.
-
