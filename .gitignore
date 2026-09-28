@@ -1,0 +1,27 @@
+# Java
+*.class
+*.jar
+*.war
+*.ear
+hs_err_pid*
+
+# Build output
+build/
+out/
+target/
+
+# IDE
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local learning files
+*.local.md
+

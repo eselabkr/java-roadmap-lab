@@ -1,0 +1,38 @@
+name: 과제 질문
+description: 요구사항이나 실행 방법에 관해 질문합니다.
+title: "[Question] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        질문 전에 README와 ASSIGNMENT를 확인해 주세요. 과제 정답 전체를 요청하는 질문은 답변이 제한될 수 있습니다.
+  - type: input
+    id: environment
+    attributes:
+      label: 실행 환경
+      description: 운영체제와 java -version 결과를 적어 주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: requirement
+    attributes:
+      label: 관련 요구사항
+      description: 어떤 요구사항을 진행하고 있나요?
+    validations:
+      required: true
+  - type: textarea
+    id: attempts
+    attributes:
+      label: 직접 시도한 내용
+      description: 예상 결과, 실제 결과, 확인한 내용을 적어 주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: 질문
+      description: 현재 이해되지 않는 지점을 구체적으로 적어 주세요.
+    validations:
+      required: true
+
