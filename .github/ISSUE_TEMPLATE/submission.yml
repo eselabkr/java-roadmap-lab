@@ -1,0 +1,90 @@
+name: 과제 제출
+description: Fork에서 완료한 과제를 검토받기 위해 제출합니다.
+title: "[Submission] Java 기본편 - "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        과제 코드는 자신의 공개 Fork에 Push한 뒤 제출해 주세요. 이 Issue에는 비밀번호, 토큰, 개인정보를 입력하지 마세요.
+
+  - type: input
+    id: github-id
+    attributes:
+      label: GitHub 계정
+      placeholder: octocat
+    validations:
+      required: true
+
+  - type: dropdown
+    id: course
+    attributes:
+      label: 과정
+      options:
+        - Java 기본편
+    validations:
+      required: true
+
+  - type: input
+    id: fork-url
+    attributes:
+      label: Fork 저장소 주소
+      placeholder: https://github.com/사용자계정/java-roadmap-lab
+    validations:
+      required: true
+
+  - type: input
+    id: branch
+    attributes:
+      label: 풀이 브랜치
+      placeholder: solve/java-basic
+    validations:
+      required: true
+
+  - type: input
+    id: commit-url
+    attributes:
+      label: 검토할 커밋 주소
+      description: 검토 대상이 바뀌지 않도록 브랜치 주소 대신 최종 커밋 주소를 입력하세요.
+      placeholder: https://github.com/사용자계정/java-roadmap-lab/commit/커밋SHA
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: completion
+    attributes:
+      label: 완료 확인
+      options:
+        - label: 프로그램을 직접 컴파일하고 실행했습니다.
+          required: true
+        - label: 필수 실행 시나리오를 확인했습니다.
+          required: true
+        - label: LEARNING_LOG.md를 자신의 언어로 작성했습니다.
+          required: true
+        - label: 제출하는 주요 코드를 직접 설명할 수 있습니다.
+          required: true
+
+  - type: textarea
+    id: output
+    attributes:
+      label: 실행 결과
+      description: 정상 시나리오와 실패 시나리오의 핵심 출력을 붙여 넣어 주세요.
+      render: text
+    validations:
+      required: true
+
+  - type: textarea
+    id: review-focus
+    attributes:
+      label: 집중적으로 검토받고 싶은 부분
+      description: 설계 판단, 이해가 부족한 개념, 개선하고 싶은 부분을 적어 주세요.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: public-notice
+    attributes:
+      label: 공개 범위 확인
+      options:
+        - label: 제출 Issue와 공개 Fork의 코드가 누구에게나 보일 수 있음을 이해했습니다.
+          required: true
+

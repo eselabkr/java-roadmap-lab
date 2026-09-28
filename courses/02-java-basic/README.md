@@ -68,6 +68,27 @@ run.bat
 git switch -c solve/java-basic
 ```
 
+## 과제 제출
+
+구현을 완료하면 자신의 Fork에 Push한 뒤 원본 저장소에서 `과제 제출` Issue를 작성합니다.
+
+```bash
+git add .
+git commit -m "Complete Java basic assignment"
+git push -u origin solve/java-basic
+```
+
+Issue에는 다음 내용을 입력합니다.
+
+- Fork 저장소 주소
+- `solve/java-basic` 브랜치
+- 검토할 최종 커밋 주소
+- 실행 여부
+- 설명을 완료한 개념
+- 집중적으로 검토받고 싶은 부분
+
+일반 피드백은 Issue에서 진행합니다. 특정 코드 줄에 직접 리뷰가 필요하면 원본 저장소를 대상으로 `[Review]` Pull Request를 열 수 있습니다. Review PR은 병합하지 않고 리뷰가 끝나면 닫습니다.
+
 ## 진행 순서
 
 1. [ASSIGNMENT.md](ASSIGNMENT.md)의 과제 소개와 범위 제한을 읽습니다.
