@@ -21,7 +21,7 @@ Java 강의를 수강한 뒤, 배운 개념을 하나의 작은 프로그램에 
 | 순서 | 과정 | 상태 | 결과물 |
 |---:|---|---|---|
 | 1 | Java 입문 | 준비 예정 | 추후 공개 |
-| 2 | [Java 기본편](courses/02-java-basic/README.md) | 과제 공개 | 모듈 의존성 규칙 시뮬레이터 |
+| 2 | [Java 기본편](courses/02-java-basic/README.md) | 점검·과제 공개 | [static 진도 점검](courses/02-java-basic/STATIC_CHECKPOINT.md), 모듈 의존성 규칙 시뮬레이터 |
 | 3 | Java 중급 1편 | 준비 예정 | 기본편 결과물 개선 |
 | 4 | Java 중급 2편 | 준비 예정 | 기본편 결과물 개선 |
 | 5 | Java 고급 1편 | 준비 예정 | 추후 공개 |
